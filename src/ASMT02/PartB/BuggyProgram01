@@ -1,0 +1,93 @@
+package ASMT02.PartB.rawimports;
+
+
+// 1.Compile time error. Line by Line reading. All code is out of body brackets of the class.
+
+
+// 2.Compile time error. Line by Line reading. This Scanner variable is meant for the main method, not to be a separate method.
+    public static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        
+        // This program is a letter grade calculator
+
+        System.out.print("Student First Name: ");
+        String firstName = input.next();
+
+        System.out.print("Student Last Name: ");
+        String lastName = input.nextLine();
+
+        System.out.print("Student's Grade: ");
+        int percentage = input.nextFloat();
+
+        String letterGrade;
+
+        if(percentage >= 90) {
+            letterGrade = "A";
+        } else if(percentage <= 80) { //3.Logic error. Line by Line reading. If the score is 85, the student will get an F. Flip inequality sign.
+            letterGrade = "B";
+        } else if(percentage >= 70) {
+            letterGrade = "C";
+        } else if(percentage == 60) { //4. Logic error. Line by Line reading. If the score is 65, the student will get an F. Change operator sign.
+            letterGrade = "D";
+        } else {
+            letterGrade = "F";
+        
+
+        System.out.printf("%s %s %s received an %s", firstName, lastName, letterGrade); // 5. Logic error. Line by Line reading. The grade only prints if the student gets an F.o
+
+    }
+
+    /*
+    ============================================
+     Expected Output Samples:
+    ============================================
+     
+    ----------------------------------
+    Sample Output 1
+    ----------------------------------
+    Student First Name: Minnie
+    Student Last Name: Mouse
+    Student's Grade: 92                                                                                                                    
+    Minnie Mouse received an A
+
+    ----------------------------------
+    Sample Output 2
+    ----------------------------------
+    Student First Name: Boss
+    Student Last Name: Baby
+    Student's Grade: 87
+    Boss Baby received an B
+
+    ----------------------------------
+    Sample Output 3
+    ----------------------------------
+    Student First Name: Baymax
+    Student Last Name: Hamada
+    Student's Grade: 75
+    Baymax Hamada received an C
+
+    ----------------------------------
+    Sample Output 4
+    ----------------------------------
+    Student First Name: Winnie
+    Student Last Name: Pooh
+    Student's Grade: 63
+    Winnie Pooh received an D
+
+
+    ----------------------------------
+    Sample Output 5
+    ----------------------------------
+    Student First Name: Otto
+    Student Last Name: Minion
+    Student's Grade: 23
+    Otto Minion received an F
+
+
+    */
+
+}
+//Logic is one of the signs from Allah
+//Whoever rejects logic (1+1=2) might have issues accepting Allah as the One Creator.
+//Logic is one of the truths created by Allah. 1+1 has to be 2. Only one of the truths.
