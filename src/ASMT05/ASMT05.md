@@ -30,4 +30,35 @@ Although the address have been made private, unable to be accessed or modified. 
 best left this way.
 
 --
+Part B (a)
 
+Has A, aggregation and composition
+
+This problem is asking from us to demonstrate our ability of OOP aggregation and composition. As a valid attempt, we
+must have 5 classes for the program. 1 must be the driver class to run the instance and the other 4 must be related to 
+each other meaning one father class which contains the other 3 subclasses. Then I must also draw a simple diagram of the
+class relationsships. I’m planning to complete this by creating 4 classes. 1 Stationary class and then as a subclass I 
+want a pencil, eraser and sharpener. The biggest challenge in this program is that its so easy that it’s boring. That’s 
+the challenge, to overcome the burden and go through it. I will try to complete this program in no more than the next 3 
+minutes. Go. Then I will watch the composition video on youtube just to confirm i am on the right track.
+
+--
+Post reflection is the program compiles successfully and it was executed as I had imagined. I was able to beat the 
+oredom, although it was difficult to not get distracted with the lack of mental stimulation. This is part of learning, 
+to overcome the limitations and the quirks of the human brain. All in all, I was able to meet all client requirements 
+and I did that by creating 5 classes. 1 Class on the top of the flowchart is the driver class. Then one level below 
+that is the stationaryBox class. Then one level below that is 3 subclasses; pencil, eraser and sharpener. For the sake
+of clarity, I did not create more that 2 attributes, 2 constructors, and 1 method for each subclass and 1 method for 
+the father class. This concludes all requirements from the client into a successful execution of Has-A relationships.
+--
+
+Part C (a)
+
+Is-A relationship. Inheritance. 
+
+Understanding the problem:
+The client is requesting for our team to demonstrate our understanding of IsA relationships. they are asking for us to
+define 4 methods. 1 driver method and a 3 layered identity structure of a singular class. Among the requirements is to 
+build a flowchart diagram and share it with the client. I am planning to complete this assignment by creating a Person,
+who is also a student and who is also a computer science student. This would entail a 3 layer class relationship
+inheritance.
