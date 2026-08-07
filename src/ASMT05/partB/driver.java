@@ -8,13 +8,10 @@ public class driver {
         eraser era1 = new eraser(); // eraser object
         sharpener sha1 = new sharpener(); // sharpener object
 
-        pen1.action(); // pencil method
-        era1.action(); // eraser method
-        sha1.action(); // sharpener method
+        Object[] obj = {pen1, era1, sha1};
 
-        pen1.box(); //stationaryBox method
-        era1.box(); //stationaryBox method
-        sha1.box(); //stationaryBox method
+        stationaryBox sta1 = new stationaryBox("Black", obj);
+        sta1.displayInfo();
 
     }
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package ASMT05.partB;
 
-public class pencil extends stationaryBox {
+public class pencil {
 
     String color = "RAW";
     double length = 0;
@@ -13,5 +13,8 @@ public class pencil extends stationaryBox {
 
     public void action() {
         System.out.println("I write words.");
+    }
+    public String toString() {
+        return "A " + this.color + " pencil";
     }
 }

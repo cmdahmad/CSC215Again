@@ -1,6 +1,6 @@
 package ASMT05.partB;
 
-public class eraser extends stationaryBox {
+public class eraser {
 
     String color = "White";
     double length = 0.0;
@@ -14,6 +14,9 @@ public class eraser extends stationaryBox {
 
     public void action() {
         System.out.println("I erase words.");
+    }
+    public String toString() {
+        return "A " + this.color + " eraser";
     }
 
 }

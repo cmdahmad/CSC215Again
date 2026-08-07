@@ -1,6 +1,6 @@
 package ASMT05.partB;
 
-public class sharpener extends stationaryBox{
+public class sharpener {
 
     String color = "RAW";
     double length = 0;
@@ -13,5 +13,8 @@ public class sharpener extends stationaryBox{
 
     public void action() {
         System.out.println("I refine pencils.");
+    }
+    public String toString() {
+        return "A " + this.color + " sharpener";
     }
 }

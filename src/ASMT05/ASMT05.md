@@ -43,13 +43,12 @@ the challenge, to overcome the burden and go through it. I will try to complete 
 minutes. Go. Then I will watch the composition video on youtube just to confirm i am on the right track.
 
 --
-Post reflection is the program compiles successfully and it was executed as I had imagined. I was able to beat the 
-oredom, although it was difficult to not get distracted with the lack of mental stimulation. This is part of learning, 
-to overcome the limitations and the quirks of the human brain. All in all, I was able to meet all client requirements 
-and I did that by creating 5 classes. 1 Class on the top of the flowchart is the driver class. Then one level below 
-that is the stationaryBox class. Then one level below that is 3 subclasses; pencil, eraser and sharpener. For the sake
-of clarity, I did not create more that 2 attributes, 2 constructors, and 1 method for each subclass and 1 method for 
-the father class. This concludes all requirements from the client into a successful execution of Has-A relationships.
+Post reflection is the program compiles successfully and it was executed as I had imagined. I was able to meet all client 
+requirements and I did that by creating 5 classes. 1 Class on the top of the flowchart is the driver class. Then one 
+level below that is the stationaryBox class. Then one level below that is 3 subclasses; pencil, eraser and sharpener. 
+For the sake of clarity, I did not create more that 2 attributes, 2 constructors, and 1 method for each subclass and 
+1 method for the father class. This concludes all requirements from the client into a successful execution of Has-A 
+relationships.
 --
 
 Part C (a)
@@ -60,5 +59,13 @@ Understanding the problem:
 The client is requesting for our team to demonstrate our understanding of IsA relationships. they are asking for us to
 define 4 methods. 1 driver method and a 3 layered identity structure of a singular class. Among the requirements is to 
 build a flowchart diagram and share it with the client. I am planning to complete this assignment by creating a Person,
-who is also a student and who is also a computer science student. This would entail a 3 layer class relationship
+who is also a student and who is also a computer science student. This would entail a 3 layer class is-a relationship
 inheritance.
+
+All client requirements have been met and a demonstration has been coded as well. Also a flowchart has been attached in 
+the screenshots below. To explain further, the granchild class is the CSStudent who is-A Student who is-A Person. This 
+explains the 3 layers of a person’s identity, hence separate classes. Then also a driver method on top of this structure 
+to run the program. This in other words is also commonly known as inheritance in Java OOP. To further clarify, the 
+CSStudent would inherit attributes and methods from the Student class and the person class since a cs student is also 
+naturally a student and a person. My program demonstrates this relationship and further supports this explanation.
+--
