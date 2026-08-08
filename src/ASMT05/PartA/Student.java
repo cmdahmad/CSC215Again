@@ -31,11 +31,10 @@ public class Student {
         DanceStudent.dancer();
     }
 
-    private class DanceStudent {
+    private class DanceStudent { // Private encapsulated class
         static void dancer() {
 
             System.out.println(" the student dances wohooo");
         }
-
     }
 }

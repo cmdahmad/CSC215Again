@@ -1,6 +1,17 @@
 package ASMT05.partC;
 
-public class driver {
+/**********************************************************************************************
+ *
+ * File: [OOP_ClassRelationship_Inheritance_IS_A_AhmadMustafa.java]
+ * By: [Ahmad Mustafa]
+ * Date: [08/08/2026]
+ *
+ * Description: The purpose of this code is to demonstrate OOP Inheritance.
+ *
+ * ***********************************************************************************************/
+
+
+public class OOP_ClassRelationship_Inheritance_IS_A_AhmadMustafa {
 
     public static void driver() {
 
