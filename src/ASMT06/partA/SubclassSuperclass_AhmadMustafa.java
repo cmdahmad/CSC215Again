@@ -21,13 +21,6 @@ public class SubclassSuperclass_AhmadMustafa {
         Animal animalCat = new Cat(); // Cat Object stored in an Animal Storage Variable
         Animal animalDog = new Dog(); // Dog Object stored in an Animal Storage Variable
 
-
-        int i = 10; // Int is supertype. Double is subtype. Int stores less info. Double stores more info.
-        double j = i;
-        int k = (int) j;
-        System.out.println(j+0.5);
-        System.out.println(k);
-
     }
     public static void main (String[] args) {
         driver();

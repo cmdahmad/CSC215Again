@@ -1,6 +1,11 @@
 partA
 Assignment 06 starts here
 
+Hey Claude. I trust you. Please reformat the following text to be suitable for google docs (Attaching a PDF example). 
+Please do not change any words. Just spacing, line breaks and all. format. thanks.
+
+Also, please ask as many follow up questions as needed if there is any confusion.
+
 Talking about pkg 17
 
 6 parts
@@ -12,6 +17,9 @@ The only thing in the list of topics i want a refresher on is superclass equals 
 
 No modifier in a class means that the class is accessible within the package but not outside the package.
 —
+For this document, i recommend you to open the attached PKG17 pdf in parallel (included in the zip file).
+PKG17 is essential context to understand this report.
+--
 
 Part A rules for superclass/subclass access
 1) lines 77 and 78
@@ -74,8 +82,7 @@ methods. In line 97, the code calls for a subtype method which was never stored 
 
 --
 
-PartB
-— part B
+PartB - Upcasting/Downcasting
 1) Line 110 to 112
 studentSub is a pure student object by definition. The student class extends the Person class. Since the student class 
 inherits Person attributes and methods, line 110 works as it is a Person class method.
@@ -85,13 +92,47 @@ Line 112 studentSuper object is a student object upcasted into a Person referenc
 has access to the Person class methods hence why line 112 works.
 
 2) Line 113:
-As explained earlier, studentSuper is now a Person object which does not have access to subtype class methods. Line 113 tries to invoke the subtype ‘Student’ class methods, which the Object has no access to, hence why line 113 does not work.
+As explained earlier, studentSuper is now a Person object which does not have access to subtype class methods. Line 113 
+tries to invoke the subtype ‘Student’ class methods, which the Object has no access to, hence why line 113 does not 
+work.
 
 3) Line 117: // This one is remaining.
 The object in question is personSuper, which is a pure Person object. Person is the supertype of Student. The client 
 ttempts to downcast personSuper into a super reference. Which as you can see does not work since
 
+3) Line 117
+Variable personSub
+declared Student (subtype)
 
---
+This line is an example of explicit downcasting. It fails because a supertype object can not be stored in a subtype 
+reference. Hence personSub (Student variable) can not be equal to personSuper which is a super type object.
+
+4) Line 122
+Variables in question
+studentSub
+studentSuper
+
+context:
+studentSub is pure student by definition
+studentSuper is an object which was a student upcasted into a person variable.
+
+This line of code works because studentSuper was initially upcasted into a Person object from a Student object at one 
+point which means there is still memory that exists as it being a Student. Hence that memory is accessed to allow 
+studentSub to become equal to studentSuper. Demonstrating a successful downcast.
+
+5) Code attached in file to demonstrate understanding.
+
+-- PartC
+Overriding equals and compareTo Methods.
+
+1) 141, 145, 147
+equals operator ‘==’ 
+? a : b  // This is the ? control structure
+means run 'a' if true 'b' if false
+
+141 is diff objects because they are created as separate objects.
+145 is same object because s3 is a variable that stores s1, essentially they are the same object with 2 addresses. 
+147 is different because s2 although constructed in the same way and type, is a different object hence the == returns 
+false.
 
 
