@@ -135,4 +135,52 @@ means run 'a' if true 'b' if false
 147 is different because s2 although constructed in the same way and type, is a different object hence the == returns 
 false.
 
+2) 161,163,165,167
+
+.equals method checks for Object’s data
+
+161 returns true because string1 and string2 are literally the same String of characters.
+
+163 returns false because string1 and string3 are a different String of characters
+
+165 returns false because string1 and c are different data types with different data.
+
+167 returns false because .equals does not accept primitive data types and c is a char.
+
+3) 171 to 180
+This is a demonstration of .compareTo method which i willl explain line by line.
+
+Line 171 and 172 returns zero because the 2 strings being compared are equal in value.
+
+Line 174 returns a negative integer because the argument being passed is smaller than the access variable.
+
+line 174 returns positive 10 because the argument is greater than the access variable.
+
+line 180 is an error because compareTo only takes String type as it’s parameter. This error will say “incompatible 
+types: Char cannot be converted to String”
+
+4) 306 to 308 
+Variables in question
+3 Phone objects phone1, phone2, and phone3
+
+Operator in question: An overriden .equals method
+> It’s function is to essentially check whether the phone prices are equal.
+
+phone 1 and phone 2 are constructed at a price of 500. phone 3 is constructed at 800. 
+
+Line 306 returns true because phone1 and phone2 have an equal price value.
+Line 307 returns false because phone1 and phone3 have a different price value.
+Line 308 returns false because the overridden .equals method checks data types first using .getClass(), and phone3 is a 
+Phone object which is different from the String type being passed in the argument.
+
+5) Line 310 to 313
+Overridden compareTo method to check phone object’s attribute ‘price’.
+
+310 return 0 because price is same. 
+Access variable - parameters. Meaning the left value minus the right value is the result hence -300 in line 311 and 300 
+in line 312. Finally, line 313 returns Warning which is a result written in the compareTo method if the compared object 
+are of different type.
+
+
+
 
