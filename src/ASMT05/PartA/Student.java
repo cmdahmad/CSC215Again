@@ -30,6 +30,9 @@ public class Student {
     static void dance() {
         DanceStudent.dancer();
     }
+    void sayHi() {
+        System.out.println("Hi I am a student!");
+    }
 
     private class DanceStudent { // Private encapsulated class
         static void dancer() {
