@@ -182,5 +182,41 @@ in line 312. Finally, line 313 returns Warning which is a result written in the 
 are of different type.
 
 
+partD
+
+Generic data type and static/dynamic binding
+
+1) Line #321
+Here we see the diamond operator being used to after the declaration of the class. The purpose of the diamond operator 
+here is to show another data type T which extends the Currency class. Here I would polish my knowledge on generics 
+a little bit. Exciting!! 
+
+2) Line 336 to 339
+Here there are multiple classes being initiated. A good overview would be that there is a parent class called Currency 
+and then within the child classes are multiple currency classes (USD, EUR, GBP etc.) This would allow users to 
+initiate objects of specific currency types.
+
+3) 344 to 345
+Generics
+
+4) 348 and 349
+Generics
+
+5) Demonstrate
+
+Part E:
+1) 386, 391, 397 and 403
+This code is first lines of a class which extends another class. This is an example of class inheritance. The class 
+being inherited is the one that comes after the keyword 'extends.' The class being initiated is considered the child
+class of the class being inherited. The child class will inherit attributes and methods from the parent class. 
+Furthermore, the child class objects can be stored in the parent reference objects and arrays.
+
+2) 410 and 417
+These 2 lines are lines which initiate a new class trying to extend another class called 'Phone' but the compiler 
+returns an error. The reason for this error is the access availability of the Phone class. The Phone class exists
+in a different package from these 2 attempts. Which means in order for these classes to have access to the Phone class
+the Phone class would need to be initiated as "public", which it is not. The scope of the Phone class only exists 
+within the package it's in.
+
 
 
