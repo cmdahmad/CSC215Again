@@ -187,22 +187,38 @@ partD
 Generic data type and static/dynamic binding
 
 1) Line #321
-Here we see the diamond operator being used to after the declaration of the class. The purpose of the diamond operator 
-here is to show another data type T which extends the Currency class. Here I would polish my knowledge on generics 
-a little bit. Exciting!! 
+Here we see the diamond operator '< >' being used to after the declaration of the BankAccount class. The purpose of the 
+diamond operator here is to show another data type T which extends the Currency class. This means that every time 
+an object of class BankAccount is created, the programmer (or the user) would have to also pass in a data type to be 
+used within the class. For example, there is an attribute called "Currency" for which the data type has not been decided
+The programmer wants this data type to be decided at the time of object initiation, in this case a generic class would 
+be used. A generic class is interchangeable, and can be decided during object initiation. To implement a generic class
+a diamond operator '<>' is used, and within it is the variable 'T extends Currency' which is only a child class of the 
+Class 'Currency'.
 
 2) Line 336 to 339
 Here there are multiple classes being initiated. A good overview would be that there is a parent class called Currency 
-and then within the child classes are multiple currency classes (USD, EUR, GBP etc.) This would allow users to 
-initiate objects of specific currency types.
+and then within the child classes are multiple classes (USD, EUR, GBP etc.) This would allow users to initiate objects 
+of specific currency types. The Currency class is the supertype of all these classes. Hence why the initiation says
+for example 'class USD extends Currency.'
 
 3) 344 to 345
-Generics
+Here in line 344 there is an object being created of the BankAccount class. The class constructor requires for the user
+to pass in the data type for certain functions within the class. Hence the use of the diamond operator. To explain the
+example, the diamond operator is used to declare an attribute variable called currency, but the data type of the 
+currency variable has not been specified. This data type will be decided when an object of this class is created, 
+and when an object is created, the programmer will pass in the data type at the time of construction. The passing in
+will be done in the diamond operator e.g. '<Double>'. In line 344, the object being created has it's currency data type
+as the 'Currency' class. In line 345 there is a method used to print out the data type for the currency, which is USD 
+for empty constructor variables.
 
 4) 348 and 349
-Generics
+Continuing on from the class BankAccount described in line 344, Line 348 is another object of this class being 
+initiated. This time, the diamond operator defines a class called EUR. Also on the constructor arguments you will see
+'new EUR' which will initiate a new EUR object within the class. Overall, 348 creates a bank account object and passes
+in 'EUR' as the required generic class. Line 349 prints out this data type, which would be EUR.
 
-5) Demonstrate
+5) Demonstrate (Add package header please and screenshot after)
 
 Part E:
 1) 386, 391, 397 and 403
