@@ -1,9 +1,20 @@
 package ASMT06.partC;
 
-public class main {
+/**********************************************************************************************
+ *
+ * File: [Equals_CompareTo_AhmadMustafa.java]
+ * By:   [Ahmad Mustafa]
+ * Date: [08/13/2026]
+ *
+ * Description: The purpose of this code is to demonstrate native and overridden .equals/.compareTo
+ *              methods.
+ *
+ * ***********************************************************************************************/
+
+public class Equals_CompareTo_AhmadMustafa {
     public static void driver() {
 
-        //System.out.println("1) Equality operator '==' ");
+        //System.out.println("Part 1) Equality operator '==' ");
         Animal s1 = new Animal();
         Animal s2 = new Animal();
 
@@ -14,7 +25,7 @@ public class main {
 
         //System.out.println( (s2 == s3) ? "True" : "False" ); //Line 147, False
 
-        //System.out.println("2) Native .equals");
+        //System.out.println("Part 2) Native .equals");
 
         String string1 = "Hello";
         String string2 = "Hello";
@@ -27,7 +38,7 @@ public class main {
         //System.out.println((string1.equals(c)) ? "True" : "False" ); // Line 165, False
         //System.out.println((string4.equals(c)) ? "True" : "False" ); // Line 167, False
 
-        //System.out.println("3) Native compareTo method");
+        //System.out.println("Part 3) Native compareTo method");
 
         //System.out.println((string1.compareTo(string1))); // Line 171, 0
         //System.out.println((string1.compareTo(string2))); // Line 172, 0
@@ -36,7 +47,7 @@ public class main {
         //System.out.println((string3.compareTo(c))); // Line 180, ERROR
 
 
-        //System.out.println("4) Lines 306 to 308; Overridden .equals method");
+        //System.out.println("Part 4) Lines 306 to 308; Overridden .equals method");
 
         Phone phone1 = new Phone(500);
         Phone phone2 = new Phone(500);
@@ -46,7 +57,7 @@ public class main {
         //System.out.println(phone1.equals(phone3)); // Line 307, false
         //System.out.println(phone1.equals("Hii!")); // Line 308, false
 
-        System.out.println("5) Lines 310 to 313; Overridden .compareTo method");
+        System.out.println("Part 5) Lines 310 to 313; Overridden .compareTo method");
 
         System.out.println(phone1.compareTo(phone2)); // Line 310, 0
         System.out.println(phone1.compareTo(phone3)); // Line 311, -300
@@ -61,7 +72,6 @@ public class main {
 }
 
 // .equals does not work for primitive types
-// .compareTo requires an int and int only
 // == operator
 // 2 objects
 // diff

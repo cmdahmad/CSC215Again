@@ -13,7 +13,7 @@ public class Phone {
     @Override
     public boolean equals(Object o) { // @Override Equals Method
         if (!this.getClass().equals(o.getClass())) {
-            System.out.print("Incompatible type so no equals: ");
+            System.out.print("'false' because of Incompatible type: ");
             return false;
         } else {
             boolean result = this.price == ((Phone) o).price;

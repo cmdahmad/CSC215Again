@@ -2,7 +2,7 @@ package ASMT06.partD;
 
 /**********************************************************************************************
  *
- * File: [main.java]
+ * File: [Generics_AhmadMustafa.java]
  * By: [Ahmad Mustafa]
  * Date: [08/16/2026]
  *
@@ -10,7 +10,7 @@ package ASMT06.partD;
  *
  * ***********************************************************************************************/
 
-public class main {
+public class Generics_AhmadMustafa {
     public static void main(String [] args) {
 
 

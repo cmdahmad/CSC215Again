@@ -17,7 +17,7 @@ public class SubclassSuperclass_AhmadMustafa {
         Dog dog1 = new Dog(); // Pure dog, subclass
         Animal ani1 = dog1; // Implicit Upcasting
 
-        //partB 3)
+        //partB 4)
         dog1 = (Dog) ani1; // Explicit Downcasting
         dog1.sayHelloDog(); //Dog method after Upcasting to Supertype, and then Downcasting to Subtype
 

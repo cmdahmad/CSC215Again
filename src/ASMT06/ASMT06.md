@@ -226,4 +226,4 @@ within the package it's in.
 
 0 Add Lines for each part (On Google dog, bm docs) done
 1 Make the text make sense
-2 Edit screenshots on canva into a demonstration.
+2 Edit screenshots on canva into a demonstration. - done https://www.canva.com/design/DAHSwWPzy8s/p-RjWeOEsXtv6nXx7gzlfA/edit
