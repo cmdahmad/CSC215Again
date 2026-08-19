@@ -6,17 +6,7 @@ Please do not change any words. Just spacing, line breaks and all. format. thank
 
 Also, please ask as many follow up questions as needed if there is any confusion.
 
-Talking about pkg 17
-
-6 parts
-no coding
-each part requires extensive writing and explanation of material. There might be some cheating involved but let’s see. 
-I haven’t cheated until now, so I might instead look into the material and search on google and try to understand 
-before writing if there is anything i don’t necessarily understand. Although it is unlikely that i wont understand. 
-The only thing in the list of topics i want a refresher on is superclass equals and compareto methods.
-
-No modifier in a class means that the class is accessible within the package but not outside the package.
-—
+"
 For this document, i recommend you to open the attached PKG17 pdf in parallel (included in the zip file).
 PKG17 is essential context to understand this report.
 --
@@ -30,9 +20,6 @@ Object Declared as Singer and initialised as Singer also.
 
 #77 singer.sayHelloPerson(); // father class method
 #78 singer.sayHelloSinger(); // child class method
-
-I need to learn more about polymorphism. I need to learn more about upcasting and downcasting. Or perhaps i need a 
-quick refresher.
 
 But line one if we go word by word we see the singer object being called and more specifically a method is being 
 accessed of this object using a .operator. Even though it is a purely Singer object, the Person class method works 
@@ -233,6 +220,10 @@ returns an error. The reason for this error is the access availability of the Ph
 in a different package from these 2 attempts. Which means in order for these classes to have access to the Phone class
 the Phone class would need to be initiated as "public", which it is not. The scope of the Phone class only exists 
 within the package it's in.
+"
 
+// NExtUp;
 
-
+0 Add Lines for each part (On Google dog, bm docs) done
+1 Make the text make sense
+2 Edit screenshots on canva into a demonstration.
